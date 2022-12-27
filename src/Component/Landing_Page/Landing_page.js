@@ -12,7 +12,7 @@ const LandingPage = () =>{
         //     q:searchBookTitle
         // }
         setLoader(true)
-        fetch(("https://www.googleapis.com/books/v1/volumes?"+new URLSearchParams({q:`${searchBookTitle}`}).toString()))
+        fetch("https://www.googleapis.com/books/v1/volumes?"+new URLSearchParams({q:searchBookTitle}).toString())
         .then((res)=>res.json())
         .then((data)=>{
             console.log(data);
