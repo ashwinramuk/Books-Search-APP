@@ -1,0 +1,31 @@
+.book-container{
+    padding:1em;
+    display: block;
+    width:20%;
+    box-sizing: content-box;
+    align-items: center;
+    text-align: center;
+    /* z-index: 0; */
+    position: relative;
+}
+
+.book-container:hover, img:hover{
+    transform: scale(1.01); 
+    /* z-index: 1;   */
+}
+.book-container:hover{
+    z-index: 2;
+}
+.book-details{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width:calc(100%-4em);
+    font-size: 16px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.648);   
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: content-box;
+    cursor: pointer;
+}
