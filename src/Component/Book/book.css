@@ -1,5 +1,4 @@
 .book-container{
-    padding:1em;
     display: block;
     width:20%;
     box-sizing: content-box;
@@ -7,10 +6,13 @@
     text-align: center;
     /* z-index: 0; */
     position: relative;
+    padding: 0;
+    margin:1em;
 }
 
 .book-container:hover, img:hover{
-    transform: scale(1.01); 
+    transform: scale(1.1); 
+    transition: all 1s;
     /* z-index: 1;   */
 }
 .book-container:hover{
@@ -18,14 +20,17 @@
 }
 .book-details{
     position: absolute;
-    top: 1em;
-    left: 1em;
-    width:calc(100%-4em);
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
     font-size: 16px;
     color:white;
     background-color: rgba(0, 0, 0, 0.648);   
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     box-sizing: content-box;
     cursor: pointer;
 }
